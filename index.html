@@ -1814,7 +1814,73 @@ footer{background:#031022;color:#91a5bc;padding:50px 0 25px}
     </div>
 
     <div class="cards" id="servicesGrid">
-      <div class="empty-state">جاري تحميل الخدمات...</div>
+
+      <article class="glow-card">
+        <div class="icon">✈️</div>
+        <h3>تذاكر الطيران</h3>
+        <p>حجز تذاكر طيران داخلية وخارجية لجميع الوجهات، بأسعار محدّثة ومتابعة كاملة لإجراءات الحجز والسفر.</p>
+        <div class="service-price-box">
+          <span class="service-price-label">السعر</span>
+          <span class="service-price-ask">اسأل عن السعر</span>
+        </div>
+        <button class="btn btn-primary card-action" type="button" onclick="openBooking('تذكرة طيران')">احجز الآن</button>
+      </article>
+
+      <article class="glow-card">
+        <div class="icon">🚢</div>
+        <h3>تذاكر البواخر</h3>
+        <p>حجز تذاكر البواخر بين السودان والسعودية ومصر، مع تنظيم كامل لموعد السفر والإجراءات المطلوبة.</p>
+        <div class="service-price-box">
+          <span class="service-price-label">السعر</span>
+          <span class="service-price-ask">اسأل عن السعر</span>
+        </div>
+        <button class="btn btn-primary card-action" type="button" onclick="openBooking('تذكرة باخرة')">احجز الآن</button>
+      </article>
+
+      <article class="glow-card">
+        <div class="icon">🏨</div>
+        <h3>حجز الفنادق</h3>
+        <p>خيارات إقامة متنوعة في جدة ومكة والمدينة والقاهرة، تناسب ميزانيتك واحتياجات رحلتك.</p>
+        <div class="service-price-box">
+          <span class="service-price-label">السعر</span>
+          <span class="service-price-ask">اسأل عن السعر</span>
+        </div>
+        <button class="btn btn-primary card-action" type="button" onclick="openBooking('حجز فندق')">احجز الآن</button>
+      </article>
+
+      <article class="glow-card">
+        <div class="icon">🕋</div>
+        <h3>برامج العمرة</h3>
+        <p>ترتيب كامل لرحلة العمرة يشمل تذاكر السفر والإقامة والتنقلات ومتابعة الإجراءات من البداية للنهاية.</p>
+        <div class="service-price-box">
+          <span class="service-price-label">السعر</span>
+          <span class="service-price-ask">اسأل عن السعر</span>
+        </div>
+        <button class="btn btn-primary card-action" type="button" onclick="openBooking('برنامج عمرة')">احجز الآن</button>
+      </article>
+
+      <article class="glow-card">
+        <div class="icon">🛂</div>
+        <h3>خدمة السفر إلى مصر</h3>
+        <p>متابعة إجراءات السفر إلى مصر ومساعدتك في كل خطوة قبل الرحلة، من الأوراق المطلوبة حتى الوصول.</p>
+        <div class="service-price-box">
+          <span class="service-price-label">السعر</span>
+          <span class="service-price-ask">اسأل عن السعر</span>
+        </div>
+        <button class="btn btn-primary card-action" type="button" onclick="openBooking('خدمة السفر إلى مصر')">احجز الآن</button>
+      </article>
+
+      <article class="glow-card">
+        <div class="icon">🚐</div>
+        <h3>نقل من وإلى المطار</h3>
+        <p>خدمة نقل مريحة وآمنة من وإلى المطار في مختلف المدن، منسّقة مع موعد رحلتك مباشرة.</p>
+        <div class="service-price-box">
+          <span class="service-price-label">السعر</span>
+          <span class="service-price-ask">اسأل عن السعر</span>
+        </div>
+        <button class="btn btn-primary card-action" type="button" onclick="openBooking('نقل من/إلى المطار')">احجز الآن</button>
+      </article>
+
     </div>
 
   </div>
@@ -1844,7 +1910,67 @@ footer{background:#031022;color:#91a5bc;padding:50px 0 25px}
     </div>
 
     <div class="cards" id="offersGrid">
-      <div class="empty-state">جاري تحميل العروض...</div>
+
+      <article class="offer-card" data-type="flight">
+        <div class="offer-media type-flight">
+          <span class="offer-badge">✈️ تذاكر الطيران</span>
+          <span class="offer-media-icon">✈️</span>
+        </div>
+        <div class="offer-body">
+          <h3>عروض تذاكر الطيران</h3>
+          <p>تابع أحدث عروض تذاكر الطيران لجميع الوجهات، وتواصل معنا لمعرفة السعر الحالي والتوفر.</p>
+          <div class="offer-bottom">
+            <div class="offer-price">اسأل عن السعر</div>
+            <button class="btn btn-primary" type="button" onclick="openBooking('تذكرة طيران')">احجز الآن</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer-card" data-type="ferry">
+        <div class="offer-media type-ferry">
+          <span class="offer-badge">🚢 البواخر</span>
+          <span class="offer-media-icon">🚢</span>
+        </div>
+        <div class="offer-body">
+          <h3>عروض تذاكر البواخر</h3>
+          <p>حجوزات بواخر بين السودان والسعودية ومصر بمواعيد مرنة ومتابعة كاملة للإجراءات.</p>
+          <div class="offer-bottom">
+            <div class="offer-price">اسأل عن السعر</div>
+            <button class="btn btn-primary" type="button" onclick="openBooking('تذكرة باخرة')">احجز الآن</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer-card" data-type="hotel">
+        <div class="offer-media type-hotel">
+          <span class="offer-badge">🏨 الفنادق</span>
+          <span class="offer-media-icon">🏨</span>
+        </div>
+        <div class="offer-body">
+          <h3>عروض حجز الفنادق</h3>
+          <p>باقات إقامة في جدة ومكة والمدينة والقاهرة بمستويات مختلفة تناسب كل ميزانية.</p>
+          <div class="offer-bottom">
+            <div class="offer-price">اسأل عن السعر</div>
+            <button class="btn btn-primary" type="button" onclick="openBooking('حجز فندق')">احجز الآن</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer-card" data-type="umrah">
+        <div class="offer-media type-umrah">
+          <span class="offer-badge">🕋 العمرة</span>
+          <span class="offer-media-icon">🕋</span>
+        </div>
+        <div class="offer-body">
+          <h3>عروض برامج العمرة</h3>
+          <p>باقات عمرة متكاملة تشمل السفر والإقامة والتنقلات، تواصل معنا لمعرفة التفاصيل والأسعار.</p>
+          <div class="offer-bottom">
+            <div class="offer-price">اسأل عن السعر</div>
+            <button class="btn btn-primary" type="button" onclick="openBooking('برنامج عمرة')">احجز الآن</button>
+          </div>
+        </div>
+      </article>
+
     </div>
 
   </div>
@@ -1992,7 +2118,52 @@ footer{background:#031022;color:#91a5bc;padding:50px 0 25px}
     </div>
 
     <div class="cards" id="hotelsGrid">
-      <div class="empty-state">جاري تحميل الفنادق...</div>
+
+      <article class="offer-card" data-type="hotel">
+        <div class="offer-media type-hotel">
+          <span class="offer-badge">🏨 الفنادق</span>
+          <span class="offer-media-icon">🏨</span>
+        </div>
+        <div class="offer-body">
+          <h3>فنادق جدة ومكة</h3>
+          <p>خيارات إقامة قريبة من الحرم ومن مناطق جدة الحيوية، بمستويات مختلفة تناسب كل ميزانية.</p>
+          <div class="offer-bottom">
+            <div class="offer-price">اسأل عن السعر</div>
+            <button class="btn btn-primary" type="button" onclick="openBooking('حجز فندق')">احجز الآن</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer-card" data-type="hotel">
+        <div class="offer-media type-hotel">
+          <span class="offer-badge">🏨 الفنادق</span>
+          <span class="offer-media-icon">🏨</span>
+        </div>
+        <div class="offer-body">
+          <h3>فنادق المدينة المنورة</h3>
+          <p>إقامة مريحة قريبة من المسجد النبوي مع خدمات تناسب زوار المدينة.</p>
+          <div class="offer-bottom">
+            <div class="offer-price">اسأل عن السعر</div>
+            <button class="btn btn-primary" type="button" onclick="openBooking('حجز فندق')">احجز الآن</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer-card" data-type="hotel">
+        <div class="offer-media type-hotel">
+          <span class="offer-badge">🏨 الفنادق</span>
+          <span class="offer-media-icon">🏨</span>
+        </div>
+        <div class="offer-body">
+          <h3>فنادق القاهرة</h3>
+          <p>إقامة في مناطق المهندسين وفيصل وغيرها، تناسب رحلات العمل والإجراءات الأمنية.</p>
+          <div class="offer-bottom">
+            <div class="offer-price">اسأل عن السعر</div>
+            <button class="btn btn-primary" type="button" onclick="openBooking('حجز فندق')">احجز الآن</button>
+          </div>
+        </div>
+      </article>
+
     </div>
 
   </div>
