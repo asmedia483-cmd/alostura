@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asmedia483-cmd.github.io/alostura/sitemap.xml
